@@ -78,7 +78,7 @@ namespace Space_Shooter
             // Shoot towards the player every second
             if (currentTime > lastShootTime + shootInterval)
             {
-                Shoot(game.GetProjectiles());
+                Shoot(game.GetEnemyProjectiles());
                 lastShootTime = currentTime;
             }
 
