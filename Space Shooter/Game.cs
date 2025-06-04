@@ -573,6 +573,11 @@ namespace Space_Shooter
             return projectiles;
         }
 
+        public List<Projectile> GetEnemyProjectiles()
+        {
+            return enemyManager.projectiles;
+        }
+
         private void LoadHighScore()
         {
             if (File.Exists(highScoreFile))
